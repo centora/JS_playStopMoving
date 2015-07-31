@@ -63,6 +63,7 @@
     }
 
     _playBtn.onclick = function(){
+        clearInterval(time);
         time = setInterval(function(){
             move(rect);
         }, 50);
